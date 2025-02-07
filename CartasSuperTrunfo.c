@@ -552,7 +552,7 @@ printf("Estado H,Cidade 4\n");
    printf("Digite seu pib:");
    scanf("%f", &pi_h04);
   
-   printf("Digite seu número de pontos turísticos \n");
+   printf("Digite seu número de pontos turísticos \n\n");
    scanf("%d", &pt_h04);
 
 
