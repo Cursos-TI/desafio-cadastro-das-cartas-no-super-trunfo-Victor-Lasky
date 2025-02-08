@@ -1002,15 +1002,25 @@ printf("Estado H, Cidade 1,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Núme
 printf("Estado H, Cidade 2,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_h02,ar_h02,pi_h02,pt_h02,dp_h02,pic_h02);
 printf("Estado H, Cidade 3,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_h03,ar_h03,pi_h03,pt_h03,dp_h03,pic_h03);
 printf("Estado H, Cidade 4,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_h04,ar_h04,pi_h04,pt_h04,dp_h04,pic_h04);
+printf("Suas cartas foram cadastradas.\n Cada uma delas tem um código, que é denominado pelo 'Estado' e 'Cidade' como você acompanhou no início do cadastro.\n");
+printf("Carregando....\n");
+printf("A combinação da letra do Estado e o número da Cidade define o código, por exemplo(a1,a2,b1,b2,e3,e4).\n");
 
 
-printf("Suas cartas foram cadastradas.\n Cada uma delas tem um código, que é denominado pelo 'Estado' e 'Cidade' como você acompanhou no início do cadastro.");
-printf("Carregando....");
-printf("A combinação da letra do Estado e o número da Cidade define o código, por exemplo(a1,a2,b1,b2,e3,e4).");
+int Carta1,Carta2;
 
 
 
-//Funcão para imprimir valores
+
+printf("Escolha o número conforme o código da carta:\n");
+printf("1 - Carta A1\n2 - Carta A2\n3 - Carta A3\n4 - Carta A4\n5 - Carta B1\n6 - Carta B2\n7 - Carta B3\n8 - Carta B4\n9 - Carta C1\n10 - Carta C2\n11 - Carta C3\n12 - Carta C4\n13 - Carta D1\n");
+printf("14 - Carta D2\n15 - Carta D3\n16 - Carta D4\n17 - Carta E1\n18 - Carta E2\n19 - Carta E3\n20 - Carta E4\n21 - Carta F1\n22 - Carta F2\n23 - Carta F3\n24 - Carta F4\n25 - Carta G1\n26 - Carta G2\n");
+printf("27 - Carta G3\n28 - Carta G4\n29 - Carta H1\n30 - Carta H2\n31 - Carta H3\n32 - Carta H4\n");
+scanf("%d",&Carta1);
+
+printf("Digite o código da segunda Carta");
+scanf("%d",&Carta2);
+
 
 void imprimirA1(struct A1); {
    printf("Estado A, Cidade 1,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_a01,ar_a01,pi_a01,pt_a01,dp_a01,pic_a01);
@@ -1110,19 +1120,278 @@ void imprimirH4(struct H4);{
 
 }
 
-int Carta1,Carta2;
+switch (Carta1)
+
+{
+case 1:
+   imprimirA1;
+   break;
+
+case 2:
+   imprimirA2;
+   break;
+    
+case 3:
+   imprimirA3;
+   break;
+
+case 4:
+   imprimirA4;
+   break;
+
+case 5:
+   imprimirB1;
+   break;
+
+case 6:
+   imprimirB2;
+   break;
+
+case 7:
+   imprimirB3;
+   break;
+
+case 8: 
+   imprimirB4;
+   break;
+
+case 9:
+   imprimirC1;
+   break;
+
+case 10:
+   imprimirC2;
+   break;
+
+case 11:
+   imprimirC3;
+   break;
+
+case 12:
+   imprimirC4;
+   break;
+
+case 13:
+   imprimirD1;
+   break;
+
+case 14: 
+   imprimirD2;
+   break;
+
+case 15:
+   imprimirD3;
+   break;
+
+case 16:
+   imprimirD4;
+   break;
+
+case 17:
+   imprimirE1;
+   break;
+
+case 18:
+   imprimirE2;
+   break;
+
+case 19:
+   imprimirE3;
+   break;
+
+case 20:
+   imprimirE4;
+   break;
+
+case 21:
+   imprimirF1;
+   break;
+
+case 22:
+   imprimirF2;
+   break;
+
+case 23:
+   imprimirF3;
+   break;
+
+case 24:
+   imprimirF4;
+   break;
+
+case 25: 
+   imprimirG1;
+   break;
+
+case 26:
+   imprimirG2;
+   break;
+
+case 27:
+   imprimirG3;
+   break;
+
+case 28:
+   imprimirG4;
+   break;
+
+case 29:
+   imprimirH1;
+   break;
+
+case 30:
+   imprimirH2;
+   break;
+
+case 31:
+   imprimirH3;
+   break;
+
+case 32:
+   imprimirH4;
+   break;
+
+default:
+   printf("Escolha inválida! Por favor, digite de 1 a 32.\n");
+
+}
 
 
+switch (Carta2)
 
+{
+case 1:
+   imprimirA1;
+   break;
 
-printf("Digite o código da primeira Carta");
-scanf("%d",&Carta1);
+case 2:
+   imprimirA2;
+   break;
+    
+case 3:
+   imprimirA3;
+   break;
 
-printf("Digite o código da segunda Carta");
-scanf("%d",Carta2);
+case 4:
+   imprimirA4;
+   break;
 
+case 5:
+   imprimirB1;
+   break;
 
-if (Carta1,Carta2==A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4,G1,G2,G3,G4,H1,H2,H3,H4)
+case 6:
+   imprimirB2;
+   break;
+
+case 7:
+   imprimirB3;
+   break;
+
+case 8: 
+   imprimirB4;
+   break;
+
+case 9:
+   imprimirC1;
+   break;
+
+case 10:
+   imprimirC2;
+   break;
+
+case 11:
+   imprimirC3;
+   break;
+
+case 12:
+   imprimirC4;
+   break;
+
+case 13:
+   imprimirD1;
+   break;
+
+case 14: 
+   imprimirD2;
+   break;
+
+case 15:
+   imprimirD3;
+   break;
+
+case 16:
+   imprimirD4;
+   break;
+
+case 17:
+   imprimirE1;
+   break;
+
+case 18:
+   imprimirE2;
+   break;
+
+case 19:
+   imprimirE3;
+   break;
+
+case 20:
+   imprimirE4;
+   break;
+
+case 21:
+   imprimirF1;
+   break;
+
+case 22:
+   imprimirF2;
+   break;
+
+case 23:
+   imprimirF3;
+   break;
+
+case 24:
+   imprimirF4;
+   break;
+
+case 25: 
+   imprimirG1;
+   break;
+
+case 26:
+   imprimirG2;
+   break;
+
+case 27:
+   imprimirG3;
+   break;
+
+case 28:
+   imprimirG4;
+   break;
+
+case 29:
+   imprimirH1;
+   break;
+
+case 30:
+   imprimirH2;
+   break;
+
+case 31:
+   imprimirH3;
+   break;
+
+case 32:
+   imprimirH4;
+   break;
+
+default:
+   printf("Escolha inválida! Por favor, digite de 1 a 32.\n");
+
+}
 
 
 
@@ -1140,3 +1409,10 @@ if (Carta1,Carta2==A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F
 
 
 }  
+
+
+
+
+
+ 
+ 
