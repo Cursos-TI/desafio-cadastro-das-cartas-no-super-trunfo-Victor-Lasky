@@ -300,7 +300,7 @@ float dp_h02;
 
 };
 
-struct H1 {
+struct H3{
 
 int po_h03;
 float ar_h03;
@@ -1006,7 +1006,7 @@ printf("Estado H, Cidade 4,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Núme
 
 printf("Suas cartas foram cadastradas.\n Cada uma delas tem um código, que é denominado pelo 'Estado' e 'Cidade' como você acompanhou no início do cadastro.");
 printf("Carregando....");
-printf("A combinação da letra do Estado e o número da Cidade define o código, por exemplo(A1,A2,B3,B4,E2,H3).");
+printf("A combinação da letra do Estado e o número da Cidade define o código, por exemplo(a1,a2,b1,b2,e3,e4).");
 
 
 
@@ -1069,42 +1069,68 @@ void imprimirE2(struct E2);{
 void imprimirE3(struct E3);{
    printf("Estado E, Cidade 3,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_e03,ar_e03,pi_e03,pt_e03,dp_e03,pic_e03);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-int comparar1,comparar2;
-
-printf("Escolha a primeira carta para comparar:\n\n");
-scanf("%f", &comparar1);
- 
-printf("Escolha a segunda carta para comparar:\n\n");
-scanf("%f", &comparar2);
- 
-if (comparar1,comparar2 != "A1,A2,A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4,G1,G2,G3,G4,H1,H2,H3,H4") {
-   printf("Escolha inválida.Escolha entre os códigos a seguir: A1,A2,A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4,G1,G2,G3,G4,H1,H2,H3,H4");
-} else {
-   printf 
+void imprimirE4(struct E4);{
+   printf("Estado E, Cidade 4,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_e04,ar_e04,pi_e04,pt_e04,dp_e04,pic_e04);
 }
- 
+void imprimirF1(struct F1);{
+   printf("Estado F, Cidade 1,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_f01,ar_f01,pi_f01,pt_f01,dp_f01,pic_f01);
+}
+void imprimirF2(struct F2);{
+   printf("Estado F, Cidade 2,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_f02,ar_f02,pi_f02,pt_f02,dp_f02,pic_f02);
+}
+void imprimirF3(struct F3);{
+   printf("Estado F, Cidade 3,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_f03,ar_f03,pi_f03,pt_f03,dp_f03,pic_f03);
+}
+void imprimirF4(struct F4);{
+   printf("Estado F, Cidade 4,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_f04,ar_f04,pi_f04,pt_f04,dp_f04,pic_f04);
+}
+void imprimirG1(struct G1);{
+   printf("Estado G, Cidade 1,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g01,ar_g01,pi_g01,pt_g01,dp_g01,pic_g01);
+}
+void imprimirG2(struct G2);{
+ printf("Estado G, Cidade 2,\n População: %2df\n Área:%.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g02,ar_g02,pi_g02,pt_g02,dp_g02,pic_g02);
+}
+void imprimirG3(struct G3);{
+printf("Estado G, Cidade 3,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g03,ar_g03,pi_g03,pt_g03,dp_g03,pic_g03);
+}
+void imprimirG4(struct G4);{
+printf("Estado G, Cidade 4,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g04,ar_g04,pi_g04,pt_g04,dp_g04,pic_g04);
+}
+void imprimirH1(struct H1);{
+   printf("Estado H, Cidade 1,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_h01,ar_h01,pi_h01,pt_h01,dp_h01,pic_h01);
+}
+void imprimirH2(struct H2);{
+   printf("Estado H, Cidade 2,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_h02,ar_h02,pi_h02,pt_h02,dp_h02,pic_h02);
+}
+void imprimirH3(struct H3);{
+   printf("Estado H, Cidade 3,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_h03,ar_h03,pi_h03,pt_h03,dp_h03,pic_h03);
+}
+void imprimirH4(struct H4);{
+   printf("Estado H, Cidade 4,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_h04,ar_h04,pi_h04,pt_h04,dp_h04,pic_h04);
+
+}
+
+int Carta1,Carta2;
+
+
+
+
+printf("Digite o código da primeira Carta");
+scanf("%d",&Carta1);
+
+printf("Digite o código da segunda Carta");
+scanf("%d",Carta2);
+
+
+if (Carta1,Carta2==A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4,G1,G2,G3,G4,H1,H2,H3,H4)
+
+
+
+
+
+
+
+
 
 
 
@@ -1113,4 +1139,4 @@ if (comparar1,comparar2 != "A1,A2,A3,A4,B1,B2,B3,B4,C1,C2,C3,C4,D1,D2,D3,D4,E1,E
  return 0;
 
 
-}
+}  
