@@ -19,7 +19,7 @@ int main() {
 
    printf("Cartas Super Trunfo \n");
    printf("Carregando...\n");
-  
+                                                                                             //Prints para implementar valores as cartas.
    printf("Vamos cadastrar suas cartas! \n");
    printf("Estado A, Cidade 1 \n");
   
@@ -555,11 +555,10 @@ printf("Estado H,Cidade 4\n");
    printf("Digite seu número de pontos turísticos \n");
    scanf("%d", &pt_h04);
 
+                                            //dp==Densidade Populacional
+                                         //pic==Pib per Capita
 
-//dp==Densidade Populacional
-//pic==Pib per Capita
 
-//Calculo da Densidade Populacional
 
 float dp_a01 = (float) po_a01/ar_a01;
 float dp_a02 = (float) po_a02/ar_a02;
@@ -584,7 +583,7 @@ float dp_d04 = (float) po_d04/ar_d04;
 float dp_e01 = (float) po_e01/ar_e01;
 float dp_e02 = (float) po_e02/ar_e02;
 float dp_e03 = (float) po_e03/ar_e03;
-float dp_e04 = (float) po_e04/ar_e04;
+float dp_e04 = (float) po_e04/ar_e04;                    //Calculo da Densidade Populacional
  
 float dp_f01 = (float) po_f01/ar_f01;
 float dp_f02 = (float) po_f02/ar_f02;
@@ -643,8 +642,7 @@ float pic_h02 = (float) pi_h02/po_h02;
 float pic_h03 = (float) pi_h03/po_h03;
 float pic_h04 = (float) pi_h04/po_h04;
 
-
-
+// Prints para mostrar as cartas.
 
 printf("Estado A, Cidade 1,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_a01,ar_a01,pi_a01,pt_a01,dp_a01,pic_a01);
 printf("Estado A, Cidade 2,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_a02,ar_a02,pi_a02,pt_a02, dp_a02,pic_a02);
@@ -671,7 +669,7 @@ printf("Estado F, Cidade 2,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Núme
 printf("Estado F, Cidade 3,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_f03,ar_f03,pi_f03,pt_f03,dp_f03,pic_f03);
 printf("Estado F, Cidade 4,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_f04,ar_f04,pi_f04,pt_f04,dp_f04,pic_f04);
 printf("Estado G, Cidade 1,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g01,ar_g01,pi_g01,pt_g01,dp_g01,pic_g01);
-printf("Estado G, Cidade 2,\n População: %2df\n Área:%.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g02,ar_g02,pi_g02,pt_g02,dp_g02,pic_g02);
+printf("Estado G, Cidade 2,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g02,ar_g02,pi_g02,pt_g02,dp_g02,pic_g02);
 printf("Estado G, Cidade 3,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g03,ar_g03,pi_g03,pt_g03,dp_g03,pic_g03);
 printf("Estado G, Cidade 4,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_g04,ar_g04,pi_g04,pt_g04,dp_g04,pic_g04);
 printf("Estado H, Cidade 1,\n População: %2d\n Área: %.2f\n PIB: %.2f\n Número de pontos turísticos: %2d\n Densidade: %.2f\n PIB per Capita %.2f\n\n",po_h01,ar_h01,pi_h01,pt_h01,dp_h01,pic_h01);
